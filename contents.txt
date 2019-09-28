@@ -1,0 +1,36 @@
+﻿
+JavaScript 概述
+	1. 什么是JavaScript
+		简称JS，是一种运行于JS解释器或执行引擎中的脚本代码，
+		是一种浏览器解释型的语言
+		主要用来实现页面的交互与动态效果
+	2. JS的组成
+		1. 核心语法 -ECMAScript 规范了JS的基本语法
+		2. 浏览器对象模型 -BOM
+			Browser Object Model，提供了一系列操作浏览器的方法
+		3. 文档对象模型 -DOM
+			Document Object Model ，提供了一系列操作的文档的方法
+
+
+DAY07: JavaScript概述 、 JS使用方式 、 基础语法 、 变量和数据类型 
+1-WEBBASIC02概述
+2-JS使用方式
+3-JS使用方式
+4-练习讲解
+5-写入和JS基础语法
+6-JS变量01
+7-JS变量02
+8-练习题
+9-number类型
+10-字符串类型
+11-其它数据类型和判断
+12-自动类型转换
+13-强制类型转换
+14-数学运算符
+
+DAY08: 运算符 、 分支结构 、 循环结构 
+DAY09: for循环 、 函数 、 数组基础 
+DAY10: 数组进阶 、 JS对象概述 、 字符串对象 
+DAY11: 内置对象相关 、 BOM 、 DOM 
+DAY12: 节点操作 、 事件 
+DAY13: 初识jQuery 、 jQuery选择器 、 jQuery操作DOM 
