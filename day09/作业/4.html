@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+//        4、声明一个数组包含若干个数字，从弹框中接收用户输入一个数字，查询数组，如果数组中存在对应的元素，输出其下标，没有提示数据不存在
+    //            定义变量，保存最终的下标
+            var index=-1;
+        function findIndex () {
+            var arr=[12,34,32,54,65,8,99];
+
+            var input=prompt("请输入一个数字")
+            for(var i=0;i<arr.length;i++){
+                if(input==arr[i]){
+//                    1.如果找到对应数据，结束循环
+//                    2. 输出对应的下标
+                    index=i;
+                    break;
+                }
+            }
+
+        }
+        findIndex();
+        if (index==-1){
+            console.log("数据不存在！")
+
+        }
+        else {
+            console.log("数据对应的下标为：",index);
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

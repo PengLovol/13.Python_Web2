@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+//        1、
+//				1. 让用户循环录入数据
+//				2. 将用户输入的数据存储在一个数组中
+//				3. 当用户输入exit 表示结束输入
+//				4. 结束之后输出数组中元素
+        var arr=[];
+        while (true){
+            var input=prompt("请输入数据");
+
+            if(input=="exit"){
+                break;
+            }
+            arr[arr.length]=input;
+        }
+        console.log(arr);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
