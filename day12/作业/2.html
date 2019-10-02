@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--练习 ：#2.html-->
+				<!--1. 创建div 按钮 输入框-->
+				<!--2. 验证输入用户名是否在6 - 18 位之间，-->
+					<!--在6-18位之间的视为通过，在div中显示绿色的-->
+					<!--文本"用户名合法"-->
+					<!--如果不合法，div中显示红色文本“用户名不合法”-->
+</head>
+<body>
+    用户名:<input type="text" name="uname">
+    <button onclick="validateName()">验证</button>
+    <div></div>
+</body>
+<script type="text/javascript">
+    //1.获取元素节点
+    var input=document.getElementsByTagName('input')[0];
+    var div=document.getElementsByTagName('div')[0];
+    //2.验证操作
+    function validateName() {
+        //获取input输入值及长度
+        inputValue=input.value.length;
+        if(inputValue>=6&&inputValue<=18){
+            //合法
+            div.innerText="用户名合法";
+            div.style.color="green";
+        }
+        else{
+            div.innerText="用户名不合法";
+            div.style.color="red";
+        }
+
+    }
+</script>
+</html>

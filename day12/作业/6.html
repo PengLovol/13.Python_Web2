@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--练习 ：#6.html/07-event.html-->
+					<!--1. 创建div标签-->
+					<!--2. JS中获取div-->
+					<!--3. 为div添加点击事件，实现点击时出现对话框-->
+</head>
+<body>
+    <div>点击</div>
+    <script>
+        var div=document.getElementsByTagName('div')[0];
+        div.onclick=function () {
+            alert(this);
+
+        };
+    </script>
+</body>
+</html>

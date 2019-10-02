@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--练习 ：#1.html-->
+				<!--1. 创建超链接，链接地址为百度-->
+				<!--2. 创建按钮，点击时修改超链接的链接地址-->
+						<!--改为 http://www.tmooc.cn-->
+</head>
+<body>
+    <a href="http://www.baidu.com" >百度</a>
+<button onclick="changeLink()">TMOOC</button>
+</body>
+<script type="text/javascript">
+    function changeLink() {
+        //获取元素节点，并修改链接地址
+        var aLink=document.getElementsByTagName('a')[0];
+        aLink.href="http://www.tmooc.cn";
+        //target = "_blank"
+        aLink.target="_blank";
+        aLink.innerText="TMOOC";
+    }
+
+</script>
+</html>
