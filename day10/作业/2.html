@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作业2</title>
+
+    <!--练习 1：  #2.html-->
+							<!--从给定的邮箱 ：-->
+								<!--zhangsan@sina.com-->
+							<!--1. 提取用户名-->
+							<!--2. 提取服务商-->
+    <script type="text/javascript">
+
+        var mail="zhangsan@sina.com"
+//        提取用户名@符号之前的字符内容就是用户名
+        var atIndex=mail.indexOf('@');
+        var userName=mail.substring(0,atIndex);
+        var serverName=mail.substring(atIndex+1);
+        console.log(userName,serverName);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

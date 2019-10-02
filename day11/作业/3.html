@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--练习 ：# 3.html-->
+                                <!--1. 网页中创建一个按钮-->
+                                <!--2. 点击按钮时，弹出确认框，-->
+                                        <!--询问用户是否需要关闭网页-->
+                                        <!--如果点击确定，就在5秒之后关闭网页-->
+                                        <!--window.close();-->
+    <script type="text/javascript">
+        function closeWindow() {
+            var res=confirm("真的要关闭吗？");
+            if (res){
+                setTimeout(function () {
+                    window.close();
+
+                },5000);
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <button onclick="closeWindow()">确认</button>
+</body>
+</html>

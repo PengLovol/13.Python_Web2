@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+     <!--练习 :#2.html-->
+                                <!--1. 创建按钮 开始和结束-->
+                                <!--2. 点击开始时，开启定时器，每隔一秒在-->
+                                        <!--控制台输出当前的系统时间-->
+                                <!--3. 点击结束时，停止打印.-->
+    <script type="text/javascript">
+        var timer;
+        function startInterval() {
+            function showTime() {
+//                创建日期对象并输出
+                var date=new Date();
+                console.log(date);
+            }
+            timer=setInterval(showTime,1000);
+        }
+        function stopInterval() {
+            clearInterval(timer);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="startInterval()">开始</button>
+    <button onclick="stopInterval()">结束</button>
+</body>
+</html>

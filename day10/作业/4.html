@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作业4</title>
+    <!--练习 ： #4.html-->
+								<!--1045_5&2033_6&0112_10-->
+								<!--分割商品数量与ID-->
+								<!--商品ID  商品数量-->
+								<!--1045				5	-->
+    <script type="text/javascript">
+        <!--提取商品信息-->
+        var strURL="1045_5&2033_6&0112_10";
+        var goodsArr=strURL.split('&');
+        console.log(goodsArr);
+//        遍历数组，再次分割出商品ID和商品数量
+        for(var i=0;i<goodsArr.length;i++){
+           var arr=goodsArr[i].split('_');
+           console.log(arr);
+           console.log("商品ID为"+arr[0],"商品数量为"+arr[1]);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

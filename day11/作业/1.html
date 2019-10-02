@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+//         练习 ：#1.html
+//					1. 获取当前系统时间
+//					2. 将系统时间以以下格式输出 ：
+//							xxxx年xx月xx日 xx时xx分xx秒 星期x
+
+        var date1=new  Date();
+        	//获取时间分量
+	    var year = date1.getFullYear();
+        var month = date1.getMonth();
+        month=Number(month)+1;
+        var dayNum = date1.getDate();
+	    var weekNum = date1.getDay();
+	    var hours=date1.getHours();
+	    var minutes=date1.getMinutes();
+	    var seconds=date1.getSeconds();
+	    console.log(year+"年"+ month +"月"+dayNum+"日 "+hours+"时"+minutes+"分"+seconds+"秒 "+"星期"+weekNum);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

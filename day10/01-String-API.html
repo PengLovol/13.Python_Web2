@@ -20,13 +20,13 @@
 	console.log(index2);
 	var index3 = s2.indexOf('a');
 	console.log(index3);
-
+//
 	var index4 = s3.lastIndexOf('l');
 	console.log(s3,index4);
 	var index5 = s3.lastIndexOf('ll',5);
 	console.log(index5);
-
-	var index6 = s2.indexOf('l',5);
+//
+	var index6 = s2.indexOf('l',8);
 	console.log(index6);
 	var index7 = s2.lastIndexOf('l',5);
 	console.log(index7);
@@ -41,9 +41,9 @@
 	var res3 = s4.substring(3,0);
 	console.log(res3);
 
-	//3. 分割字符串
+//	3. 分割字符串
 	var s5 = "2018-11-11";
-	var resArr = s5.split("/");
+	var resArr = s5.split("-");
 	console.log(resArr);
 
 	//4. 模式匹配
@@ -58,12 +58,12 @@
 
 	var res4 = s6.replace(reg2,"变有钱");
 	console.log(res4,s6);
-
+//
 	var s7 = "垃圾，真垃圾";
 	var reg3 = /垃圾/g;
 	var newStr = s7.replace(reg3,"*");
 	console.log(newStr);
-	
+
 
 
 
