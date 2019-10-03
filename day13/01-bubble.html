@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div style="width: 200px;height: 200px;background: red;"></div>
+</body>
+    <script>
+        var div=document.getElementsByTagName('div')[0];
+        //添加事件
+
+        div.onclick=function (evt) {
+            alert('div被点击');
+            evt.stopPropagation();
+
+        };
+        document.body.onclick=function () {
+            alert('body被点击');
+        };
+
+         //w3c表标准时间监听函数
+        /*
+        事件函数名： click dbclick(省略on前缀)
+        function
+        事件传递机制：默认 false(冒泡) true(捕获)
+         */
+
+
+//
+//        div.addEventListener('click',function () {
+//            alert('div被点击');
+//
+//        },true);
+//        document.body.addEventListener('click',function () {
+//            alert('body被点击');
+//
+//        },true);
+    </script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+<!--练习 ：#1.html-->
+					<!--1. 创建文本框，定义id-->
+					<!--2. 创建按钮，内容为“显示”-->
+					<!--3. 创建 div,当按钮被点击时，将文本框中的内容以一级标题的形式显示在div中-->
+					<!--4. 使用jQuery实现-->
+    <script src="jquery-1.11.3.js"></script>
+</head>
+<body>
+    <input type="text" id="uname">
+    <button onclick="showText()">显示</button>
+    <div></div>
+</body>
+<script>
+    function showText() {
+        console.log($('#uname').val());
+        $('div').html('<h1>'+$('#uname').val()+'</h1>');
+
+    }
+</script>
+</html>
