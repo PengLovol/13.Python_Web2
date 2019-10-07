@@ -18,6 +18,8 @@
 	});
 	$(function (){
 		console.log($('div'));
+
+
 		//事件绑定
 		$('div').bind('click',function (evt) {
 			alert("div被点击");
@@ -27,6 +29,7 @@
 			alert("h1被点击");
 			console.log(this);
 			console.log(evt);
+			console.log(evt.target);
 			console.log(evt.offsetX);
 		});
 	});

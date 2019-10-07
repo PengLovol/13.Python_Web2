@@ -1,5 +1,5 @@
 
-jQuery样式操作
+jQuery样式操作:#01-css.html
 			1. attr();
 					添加id或class属性，对应选择器，为元素添加样式
 			2. addClass('className')
@@ -39,7 +39,7 @@ jQuery样式操作
 							...
 						});
 
-jQuery操作节点
+jQuery操作节点:#02-node.html
 	1. children() / children('selector')
 			获取某个jQuery对象下所有的子元素，或者获取带有
 			指定选择器的子元素
@@ -54,11 +54,11 @@ jQuery操作节点
 			获取某jQuery对象的所有兄弟元素 / 满足selector的
 			兄弟元素
 	5. find('selector')
-			获取满足selector的所有后代元素
+			获取满足selector的所有后代元素(包含直接子元素和间接子元素)
 	6. parent()
 			获取jQuery对象的父元素
 
-jQuery创建对象
+jQuery创建对象：03-createNode.html
 	1. $('标签')
 			参数为要创建的标签，使用HTML标签语法
 			et :
